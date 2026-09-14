@@ -1,5 +1,9 @@
 # clip-clap-community-fix
 
+[!CAUTION]
+**WARNING: THIS APP IS ALPHA NOT FOR GENERAL USE.**
+IT IS UNDER ACTIVE DEVELOPMENT AND CAN BREAK YOUR COMPUTER OR DEVICES CONNECTED TO THE SWITCH!
+
 A small PyQt5 desktop app to discover, remember, and monitor Max Hauri
 clip-clap switches (CLIPMETER) over Bluetooth LE -- live power readings and
 on/off control, without needing the official phone app.
