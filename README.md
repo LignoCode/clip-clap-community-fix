@@ -41,9 +41,6 @@ of the wire protocol.
 
 ## macOS
 
-Two options, both untested on real hardware since this was built on Linux --
-expect a round of debugging together against your actual Mac.
-
 **Quick dev setup** (run via Terminal, needs Python installed):
 
     ./install_mac.sh [destination folder]
@@ -56,14 +53,7 @@ with requirements installed.
 
     ./build_mac_app.sh
 
-Produces `dist/clip-clap switches.app` via py2app. PyQt5 apps can be finicky
-to bundle correctly (Qt plugin paths in particular) -- if it fails or launches
-to a blank/broken window, run the binary directly from Terminal (path printed
-at the end of the build) to see the actual error, and we'll fix it from there.
-If py2app proves too painful, PyInstaller is the usual fallback and worth
-trying instead.
+Produces `dist/clip-clap switches.app` via py2app.
 
 **Important:** macOS doesn't expose real Bluetooth MAC addresses to apps
-(CoreBluetooth gives out random per-app UUIDs instead, for privacy). Known
-switches saved on Linux won't resolve on macOS -- a macOS install needs its
-own fresh scan and builds its own known-switches list. This is expected.
+(CoreBluetooth gives out random per-app UUIDs instead, for privacy).
